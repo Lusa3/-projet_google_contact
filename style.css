@@ -1,3 +1,8 @@
+body{
+    background-color: #f8fafd;
+}
+
+
 /* HEADER */
 
 .header{
@@ -25,7 +30,7 @@
 
 
 .group {
-    display: flex;
+   display: flex;
    line-height: 28rem;
    align-items: center;
     position: relative;
@@ -57,4 +62,73 @@
     fill: #9e9ea7;
     width: 1rem;
     height: 1rem;
+   }
+   /* section contact */
+.contact__input{
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+   .create-contact{
+    display: flex;
+   /* line-height: 28rem;  */
+   align-items: center;
+    position: relative;
+  
+    gap: 0.5rem;
+
+    width: 10%;
+    height: 2rem;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    /* outline: none; */
+    background-color: #c2e7FF;
+    color: #0d0c22;
+    /* transition: .3s ease; */
+    
+   }
+   .icon__create-contact{
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #c2e7FF;
+    color: #0d0c22;
+   }
+   .contact-info{
+    display: flex;
+   /* line-height: 28rem;  */
+   align-items: center;
+    position: relative;
+   
+    gap: 0.5rem;
+
+    width: 15%;
+    height: 1.5rem;
+    padding: 0.5rem;
+    border: 0.5px solid transparent;
+    border-radius: 10rem;
+    /* outline: none; */
+    background-color: #c2e7FF;
+    color: #0d0c22;
+   }
+   .frequence__contact{
+    display: flex;
+    /* line-height: 28rem;  */
+    align-items: center;
+     position: relative;
+     padding-left: 1rem;
+     padding-top: 1rem;
+     gap: 1rem;
+ 
+   }
+   .frequence__contact p {
+    font-size: 1.1rem;
+   }
+   .libelles__contact{
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 8rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
    }
