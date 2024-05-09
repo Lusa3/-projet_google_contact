@@ -177,8 +177,8 @@ body {
 /* affichage de info ou contenu qui ce trouve dans chaque section */
 .section-affiche {
     background-color: #ffffff;
-    width: 72rem;
-    height: 41rem;
+    width: 82rem;
+    height: 48rem;
     border-radius: 3rem;
 
 }
@@ -186,7 +186,7 @@ body {
 /* RESPONSIVE WEB */
 
 /* télephone */
-@media screen and (min-width : 320px) and (max-width : 767px) {
+/* @media screen and (min-width : 320px) and (max-width : 767px) {
     body{
         min-width: 100%;
     }
@@ -207,10 +207,10 @@ body {
      width: 15rem;
 
     }
-}
+} */
 
 /* tablette */
-@media screen and (min-width : 768px) and (max-width : 992px) {
+/* @media screen and (min-width : 768px) and (max-width : 992px) {
     
     .menu {
         display: none;
@@ -221,4 +221,4 @@ body {
     }
     
 
-}
+} */
