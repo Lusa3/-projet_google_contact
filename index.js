@@ -11,7 +11,7 @@ onglets.forEach(onglet => {
             onglet.classList.add('active');
         }
         index = onglet.getAttribute('data-anim');
-        // console.log(index);
+        console.log(index);
 
         for (let i = 0; i < onglets.length; i++) {
            if (parseInt(onglets[i].getAttribute('data-anim')) != index) {
@@ -25,7 +25,7 @@ onglets.forEach(onglet => {
             }else{
                 content[j].classList.remove('contentactive');
             }
-        //    console.log(content)
+           console.log(content)
         }
     })
 })

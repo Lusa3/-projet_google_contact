@@ -172,6 +172,12 @@ body {
 .frequence__contact p {
     font-size: 1.1rem;
 }
+.onglets_content{
+    display: none;
+}
+.onglets_content{
+    display: block;
+}
 
 /* libellés */
 .libelles__contact {
