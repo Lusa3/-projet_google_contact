@@ -1,51 +1,31 @@
-const onglets = document.querySelectorAll(".onglets")
-const contentOne = document.getElementById('.onglets_content-one')
-const contentTwo = document.getElementsByClassName('.onglets_content-two')
-const contentThree = document.getElementsByClassName('.onglets_content-three')
-const content = document.querySelectorAll('.content-active')
 
-let f = 0;
-let index = 0;
-onglets.forEach( onglet => {
-  
-        index = onglet.getAttribute('data-anim');
-     console.log(index);
+//  récuper le class des onglets et le class de leur contenus
+let onglets = document.querySelectorAll('.onglets');
+let ongletsContent = document.querySelectorAll('.onglets_content');
 
-     for(let i = 0; i < onglets.length; i++){
-       if (onglets[i].getAttribute('data-anim') != index) {
-        onglets[i].classList.remove('active');
-       }
-     }
-    
-   
-    
-   
-    })
+// créer une function pour active une onglet
 
+function ongletActive(typeOnglet) {
 
-// onglets.forEach( () => {
-//     create-contact.addEventListener('click', () => {
-//         if(create-contact.classList.contains('active')){
-//             return;
-//         } else{
-//             create-contact.classList.add('active');
-//         }
-//         index = create-contact.getAttribute('data-anim');
-//         console.log(index);
+//    créer une boucle pour parcourir les onglets et leur contenus
+    onglets.forEach(function(onglet, index) {
+    //    afficher ou cache l'onglet qui est active ou qui est affciher à ce moment là
+        if (index === typeOnglet) {
+            onglet.classList.add('active');
+            ongletsContent[index].style.display = 'block';
+        } else {
+            onglet.classList.remove('active');
+            ongletsContent[index].style.display = 'none';
+        }
+    });
+}
 
-//         for (let i = 0; i < onglets.length; i++) {(                                                  )
-//            if (onglets[i].getAttribute('data-anim') != index) {
-//             onglets[i].classList.remove('active');
-//     )}
-            
-//         }
-    //     for(j = 0; j < content.length ; j++){
-    //         if (content[j].getAttribute('data-anim') == index) {
-    //             content[j].classList.add('onglets_content');
-    //         }else{
-    //             content[j].classList.remove('onglets_content');
-    //         }
-    //        console.log(content)
-    //     }
-    // })
-// })
+// Ajouter un écouteur d'événement à chaque onglet
+
+onglets.forEach(function(onglet, index) {
+    onglet.addEventListener('click', function() {
+        ongletActive(index);
+    });
+});
+// Activer le premier onglet par défaut
+ongletActive(0);
