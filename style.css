@@ -188,11 +188,31 @@ body {
 /* affichage de info ou contenu qui ce trouve dans chaque section */
 .section-affiche {
     background-color: #ffffff;
-    width: 82rem;
-    height: 48rem;
-    border-radius: 3rem;
-
+     width: 70rem;
+     height: 40rem;
+    border-radius: 3rem; 
+   
 }
+
+
+form {
+    display: flex;
+    flex-direction: column;  
+}
+.ajout-contact{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 75%;
+    height: 2rem;
+    padding:  0.5rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    outline: none;
+    background-color: var(--blue-color);
+    color: var(--black-color);
+}
+
 
 /* RESPONSIVE WEB */
 
