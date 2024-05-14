@@ -80,4 +80,7 @@ function listBurger() {
         containerList.style.display = 'block' ;
     }
 }
+
+
 iconBurger.addEventListener('click',listBurger);
+buttonForm.addEventListener('click', resultForm);
