@@ -38,33 +38,46 @@ ongletActive(0);
 // let email = document.getElementById('#email').value;
 // let phone = document.getElementById('#phone').value;
 
-// on recuper la class du formulaire
 
-const formulaire = document.getElementById('formulaire-contact');
 
-// on créer un event sur le formulaire (le boutton submit ce trouve a l'interieur du formulaire)
-// formulaire.addEventListener('submit', function(event) {
-//     event.preventDefault();
+const buttonForm = document.querySelector('button');
+  
+    const firstname = document.getElementById('firstname').value;
+    const lastName = document.getElementById('lastname').value;
+    const company = document.getElementById('company').value;
+    const post = document.getElementById('post').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
 
-    // on recupere les id du formulaire et on value permet de recuperer les valeur inscrite au formulaire et affiche (source openclassroms)
-    // const firstname = document.getElementById('firstname').value;
-    // const name = document.getElementById('name').value;
-    // const company = document.getElementById('company').value;
-    // const post = document.getElementById('post').value;
-    // const email = document.getElementById('email').value;
-    // const phone = document.getElementById('phone').value;
+    const resultFirstName = document.getElementById('resultat_firstname');
+    const resultName = document.getElementById('resultat_lastname');
+    const resultCompany = document.getElementById('resultat_company');
+    const resultPost = document.getElementById('resultat_post');
+    const resultEmail =  document.getElementById('resultat_email');
+    const resultPhone = document.getElementById('resultat_phone');
 
-//   on recupere les id de la class resultat  le connecte avec les variable ou on a recuperer les informations
-    // document.getElementById('resultat_firstname').textContent = firstname;
-    // document.getElementById('resultat_name').textContent = name;
-    // document.getElementById('resultat_company').textContent = company;
-    // document.getElementById('resultat_post').textContent = post;
-    // document.getElementById('resultat_email').textContent = email;
-    // document.getElementById('resultat_phone').textContent = phone;
+function resultForm(){
+ resultFirstName.textContent =firstname;
+ resultName.textContent = lastName;
+ resultCompany.textContent = company;
+ resultPost.textContent = post;
+ resultEmail.textContent = email;
+ resultPhone.textContent = phone;
 
-    // // recuper de la div les résultats
-    // const resultatDiv = document.getElementById('resultat');
+}
 
-    // explication demain
-//     resultatDiv.innerHTML = resultatHtml;
-// });
+buttonForm.addEventListener('click', resultForm);
+
+
+const iconBurger = document.querySelector('.menu_hbg');
+
+
+function listBurger() {
+    const containerList = document.querySelector('.menu_containe');
+    if (containerList.style.display === 'block') {
+        containerList.style.display='none';
+    }else {
+        containerList.style.display = 'block' ;
+    }
+}
+iconBurger.addEventListener('click',listBurger);
