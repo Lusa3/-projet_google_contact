@@ -94,9 +94,7 @@ body {
 }
 
 /* MAIN */
-.menu_containe{
- 
-}
+
 .menu_containe-list{
     margin-top: 2rem;
     margin-left: 1rem;
@@ -165,9 +163,6 @@ body {
 
 }
 
-.icon-frequence__contact {
-    /* margin-left: var(--section-padding); */
-} 
 
 .frequence__contact p {
     font-size: 1.1rem;
@@ -188,7 +183,7 @@ body {
 /* affichage de info ou contenu qui ce trouve dans chaque section */
 .section-affiche {
     background-color: #ffffff;
-     width: 70rem;
+     width: 80vw;
      height: 40rem;
     border-radius: 3rem; 
    
@@ -212,7 +207,22 @@ form {
     background-color: var(--blue-color);
     color: var(--black-color);
 }
-
+.text-onglets_content{
+ margin: 1.5rem;
+ font-size: 1.5rem;
+ opacity: 0.75;
+}
+.title-onglets-content{
+    display: flex;
+    
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+    gap: 6rem;
+    border-bottom: 1px solid gray;
+    width: 95%;
+    opacity: 0.75;
+}
 
 /* RESPONSIVE WEB */
 

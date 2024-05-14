@@ -43,28 +43,28 @@ ongletActive(0);
 const formulaire = document.getElementById('formulaire-contact');
 
 // on créer un event sur le formulaire (le boutton submit ce trouve a l'interieur du formulaire)
-formulaire.addEventListener('submit', function(event) {
-    event.preventDefault();
+// formulaire.addEventListener('submit', function(event) {
+//     event.preventDefault();
 
     // on recupere les id du formulaire et on value permet de recuperer les valeur inscrite au formulaire et affiche (source openclassroms)
-    const firstname = document.getElementById('firstname').value;
-    const name = document.getElementById('name').value;
-    const company = document.getElementById('company').value;
-    const post = document.getElementById('post').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
+    // const firstname = document.getElementById('firstname').value;
+    // const name = document.getElementById('name').value;
+    // const company = document.getElementById('company').value;
+    // const post = document.getElementById('post').value;
+    // const email = document.getElementById('email').value;
+    // const phone = document.getElementById('phone').value;
 
 //   on recupere les id de la class resultat  le connecte avec les variable ou on a recuperer les informations
-    document.getElementById('resultat_firstname').textContent = firstname;
-    document.getElementById('resultat_name').textContent = name;
-    document.getElementById('resultat_company').textContent = company;
-    document.getElementById('resultat_post').textContent = post;
-    document.getElementById('resultat_email').textContent = email;
-    document.getElementById('resultat_phone').textContent = phone;
+    // document.getElementById('resultat_firstname').textContent = firstname;
+    // document.getElementById('resultat_name').textContent = name;
+    // document.getElementById('resultat_company').textContent = company;
+    // document.getElementById('resultat_post').textContent = post;
+    // document.getElementById('resultat_email').textContent = email;
+    // document.getElementById('resultat_phone').textContent = phone;
 
-    // recuper de la div les résultats
-    const resultatDiv = document.getElementById('resultat');
+    // // recuper de la div les résultats
+    // const resultatDiv = document.getElementById('resultat');
 
     // explication demain
-    resultatDiv.innerHTML = resultatHtml;
-});
+//     resultatDiv.innerHTML = resultatHtml;
+// });
