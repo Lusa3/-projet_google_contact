@@ -1,34 +1,4 @@
 
-//  récuper le class des onglets et le class de leur contenus
-let onglets = document.querySelectorAll('.onglets');
-let ongletsContent = document.querySelectorAll('.onglets_content');
-
-// créer une function pour active une onglet
-
-function ongletActive(typeOnglet) {
-
-//    créer une boucle pour parcourir les onglets et leur contenus
-    onglets.forEach(function(onglet, index) {
-    //    afficher ou cache l'onglet qui est active ou qui est affciher à ce moment là
-        if (index === typeOnglet) {
-            onglet.classList.add('active');
-            ongletsContent[index].style.display = 'block';
-        } else {
-            onglet.classList.remove('active');
-            ongletsContent[index].style.display = 'none';
-        }
-    });
-}
-
-// Ajouter un écouteur d'événement à chaque onglet
-
-onglets.forEach(function(onglet, index) {
-    onglet.addEventListener('click', function() {
-        ongletActive(index);
-    });
-});
-// Activer le premier onglet par défaut
-ongletActive(0);
 
 
 // let firstname = document.getElementById('#firstname');
@@ -37,6 +7,41 @@ ongletActive(0);
 // let post = document.getElementById('#post').value;
 // let email = document.getElementById('#email').value;
 // let phone = document.getElementById('#phone').value;
+
+
+
+function masquerTousLesContenus() {
+    const contenus = document.querySelectorAll('.onglets_content-form, .onglets_content-contact, .onglets_content-frequence');
+    contenus.forEach(contenu => {
+        contenu.style.display = 'none';
+    });
+}
+
+
+function afficherOngletForm() {
+    masquerTousLesContenus();
+    const contenuForm = document.querySelector('.onglets_content-form');
+    contenuForm.style.display = 'block';
+}
+
+
+function afficherOngletContact() {
+    masquerTousLesContenus();
+    const contenuContact = document.querySelector('.onglets_content-contact');
+    contenuContact.style.display = 'block';
+}
+
+
+function afficherOngletFrequence() {
+    masquerTousLesContenus();
+    const contenuFrequence = document.querySelector('.onglets_content-frequence');
+    contenuFrequence.style.display = 'block';
+}
+
+
+const ongletForm = document.querySelector('.onglets-form');
+const ongletContact = document.querySelector('.onglets-contact');
+const ongletFrequence = document.querySelector('.onglets-frequence');
 
 
 
@@ -106,16 +111,40 @@ const modifyContact = document.querySelector('.button')
 function modifyTab(){
     const tabForm = document.querySelector('.onglet-content-modify"');
     if (tabForm.style.display === 'block') {
-        tabForm.style.display = 'none'; 
-       } else {
-        tabForm.style.display = 'block';
-       }
+        tabForm.style.display = 'none';
+        modifyContact.classList.remove('active');
+     } else {
+   tabForm.style.display = 'block';
+   modifyContact.classList.add('active');
+  }
 }
 
 
+ongletForm.addEventListener('click', () => {
+    afficherOngletForm();
+});
+
+ongletContact.addEventListener('click', () => {
+    afficherOngletContact();
+});
+
+ongletFrequence.addEventListener('click', () => {
+    afficherOngletFrequence();
+});
 
 modifyContact.addEventListener('click', modifyTab)
 hiddenLibelle.addEventListener('click', hiddenCreateLibelle )
 libelleIcon.addEventListener('click', createLibelle )
 iconBurger.addEventListener('click',listBurger);
 buttonForm.addEventListener('click', resultForm);
+
+// function ContactDisplay () {
+//     const contentContact = document.querySelector('.onglets_content-contact');
+//     if (contentContact.style.display === 'block') {
+
+//         tabContact.classList.remove('active');
+//     } else {
+//         contentContact.style.display = 'block';
+//         tabContact.classList.add('active');
+//     }
+// }

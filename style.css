@@ -196,8 +196,8 @@ body {
     height: 15.5rem;
     border-radius: 3rem;   
     position: absolute;
-    top: calc(40% - 50px / 2); 
-    left: calc(50% - 50px / 2); 
+    top: calc(38% - 50px / 2); 
+    left: calc(40% - 50px / 2); 
     z-index: 2;
 }
 .title-libelle{
@@ -241,7 +241,15 @@ body {
     border-radius: 3rem; 
    
 }
-
+.onglets_content-form-contact{
+    display: none;
+}
+.onglets_content-contact{
+    display: none;
+}
+.onglets_content-frequence{
+    display: none;
+}
 form {
     display: flex;
     flex-direction: column;  
@@ -283,6 +291,7 @@ form {
 }
 
 /* page de modification */
+
 .header-modify{
     margin-top: 2.5rem;
     display: flex;
