@@ -81,6 +81,41 @@ function listBurger() {
     }
 }
 
+const libelleIcon = document.querySelector('.icon__libelles__contact')
 
+function createLibelle(){
+   const contentLibelle = document.querySelector('.windowdark');
+   if (contentLibelle.style.display === 'block') {
+    contentLibelle.style.display = 'none'; 
+   } else {
+    contentLibelle.style.display = 'block';
+   }
+}
+
+const hiddenLibelle = document.querySelector('.nothing');
+
+function hiddenCreateLibelle(){
+    const contentLibelle = document.querySelector('.windowdark');
+    if (contentLibelle.style.display === 'block') {
+     contentLibelle.style.display = 'none'; 
+    } else {
+     contentLibelle.style.display = 'block';
+    }
+}
+const modifyContact = document.querySelector('.button')
+function modifyTab(){
+    const tabForm = document.querySelector('.onglet-content-modify"');
+    if (tabForm.style.display === 'block') {
+        tabForm.style.display = 'none'; 
+       } else {
+        tabForm.style.display = 'block';
+       }
+}
+
+
+
+modifyContact.addEventListener('click', modifyTab)
+hiddenLibelle.addEventListener('click', hiddenCreateLibelle )
+libelleIcon.addEventListener('click', createLibelle )
 iconBurger.addEventListener('click',listBurger);
 buttonForm.addEventListener('click', resultForm);

@@ -119,7 +119,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    width: 75%;
+    width: 10rem;
     height: 2rem;
     padding:  0.5rem;
     border: 1px solid transparent;
@@ -141,7 +141,7 @@ body {
     align-items: center;
     /* position: relative; */
     gap: 0.5rem;
-    width: 100%;
+    width: 12rem;
     height: 1rem;
     padding: 1rem;
     border: 0.5px solid transparent;
@@ -179,16 +179,68 @@ body {
     /* padding-left: var(--section-padding);
     padding-top: var(--section-padding); */
 }
-
+.windowdark{
+    display: none;
+    position: absolute;
+    background-color: #0d0c2249;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.create-libelles{
+    background-color: #ffffff;
+    opacity: 1;
+    width: 22rem;
+    height: 15.5rem;
+    border-radius: 3rem;   
+    position: absolute;
+    top: calc(40% - 50px / 2); 
+    left: calc(50% - 50px / 2); 
+    z-index: 2;
+}
+.title-libelle{
+   margin-left: 2rem;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    /* margin-bottom: 2rem; */
+}
+#text{
+    display: block;
+     margin: 0 auto; 
+    width: 15rem;
+    height: 3rem;
+}
+.libelles-p{
+    margin-top: 1.7rem;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+.register{
+    border-radius: 2rem;
+    padding: 7px;
+}
+.register:hover{
+    background-color: #c2e7FF;
+}
+.nothing{
+    border-radius: 2rem;
+    padding: 7px;
+}
+.nothing:hover{
+    background-color: #c2e7FF;
+}
 /* affichage de info ou contenu qui ce trouve dans chaque section */
 .section-affiche {
     background-color: #ffffff;
      width: 80vw;
-     height: 40rem;
+     height: 40vw;
     border-radius: 3rem; 
    
 }
-
 
 form {
     display: flex;
@@ -207,6 +259,12 @@ form {
     background-color: var(--blue-color);
     color: var(--black-color);
 }
+.onglets_content{
+    padding-top: 3rem;
+}
+.arrow-contact{
+    padding-left: 3rem;
+}
 .text-onglets_content{
  margin: 1.5rem;
  font-size: 1.5rem;
@@ -224,6 +282,35 @@ form {
     opacity: 0.75;
 }
 
+/* page de modification */
+.header-modify{
+    margin-top: 2.5rem;
+    display: flex;
+   align-items: center;
+   gap: 55rem;
+}
+.arrow-modify{
+    padding-left: 3rem;
+}
+.content-modify{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  
+}
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    width: 5rem;
+    background-color: #0b57d0;
+    border-radius: 2rem;
+    color: #ffffff;
+}
+.button:hover{
+    opacity: 0.95;
+    box-shadow: rgba(0, 0, 0, 1) 1px 1px 3px;
+}
 /* RESPONSIVE WEB */
 
 /* télephone */
