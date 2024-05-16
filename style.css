@@ -329,6 +329,23 @@ table{
     border: solid 1px grey;
     background-color: rgba(245, 222, 179, 0.303);
 }
+/* affichage du formulaire */
+.affichage-formulaire{
+    padding: 2rem;
+}
+.img-form{
+    width: 12rem;
+}
+.header-affiche-form{
+    display: flex;
+    align-items: center;
+    gap: 50rem;
+}
+.content-modify-form{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 /* page de modification */
 
 .header-modify{
