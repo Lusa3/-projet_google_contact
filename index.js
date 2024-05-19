@@ -152,6 +152,9 @@ function createLabelList (labels) {
 }
 
 
+
+
+
 contactForm.addEventListener('submit',function (event){
     addNewContact(event)
     contactForm.reset()

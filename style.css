@@ -6,14 +6,15 @@
     --grey-color: #f3f3f4;
     --grey-dark-color: #9e9ea7;
     /*-----padding--------*/
-    --section-padding: 1rem;
-
-    /*-----marging------*/
-    --margin-left: 1.5rem;
+   
 
     /* Transition */
     --transition: .3s ease;
     /*------font-size-----*/
+    /* gap */
+    --default-gap: 1rem;
+
+
     font-family: '-apple-system', 'BlimKMacsSystemfont', 'segoe UI', 'Roboto', 'Helvectica', Arial, sans-serif;
 
 }
@@ -37,7 +38,7 @@ body {
     flex-direction: row;
     align-items: center;
     margin-left: 1.5rem;
-    gap: 1rem;
+    gap: var(--default-gap);
 
 }
 
@@ -50,7 +51,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: var(--default-gap);
 }
 
 .logo-contact p {
@@ -204,7 +205,7 @@ body {
    margin-left: 2rem;
     font-size: 1.5rem;
     padding-top: 1rem;
-    /* margin-bottom: 2rem; */
+  
 }
 #text{
     display: block;
@@ -233,45 +234,24 @@ body {
 .nothing:hover{
     background-color: #c2e7FF;
 }
-/* affichage de info ou contenu qui ce trouve dans chaque section */
+
+
+
+/*  affiche le contact */
 .section-affiche {
     background-color: #ffffff;
-     width: 80vw;
-     height: 40vw;
+     width: 70vw;
+     height: 35vw;
     border-radius: 3rem; 
     padding: 15px;
    
-}
-
-.onglets_content-form-contact{
-    display: none;
-}
-.onglets_content-contact{
-    display: none;
-}
-.onglets_content-frequence{
-    display: none;
 }
 form {
     display: flex;
     flex-direction: column;  
 }
-.ajout-contact{
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    width: 75%;
-    height: 2rem;
-    padding:  0.5rem;
-    border: 1px solid transparent;
-    border-radius: 1rem;
-    outline: none;
-    background-color: var(--blue-color);
-    color: var(--black-color);
-}
-.onglets_content{
-    padding-top: 3rem;
-}
+
+
 .arrow-contact{
     padding-left: 3rem;
 }
@@ -280,18 +260,6 @@ form {
  font-size: 1.5rem;
  opacity: 0.75;
 }
-.title-onglets-content{
-    display: flex;
-    
-    margin-left: 1.5rem;
-    margin-top: 2rem;
-    padding-bottom: 1.5rem;
-    gap: 6rem;
-    border-bottom: 1px solid gray;
-    width: 95%;
-    opacity: 0.75;
-}
-/*  affiche le contact */
 th, td{
     padding: 20px;
     text-align: left;
@@ -339,30 +307,14 @@ table{
 .header-affiche-form{
     display: flex;
     align-items: center;
-    gap: 50rem;
+    gap: 35rem;
 }
-.content-modify-form{
+.enregister-form{
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-/* page de modification */
 
-.header-modify{
-    margin-top: 2.5rem;
-    display: flex;
-   align-items: center;
-   gap: 55rem;
-}
-.arrow-modify{
-    padding-left: 3rem;
-}
-.content-modify{
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-  
-}
 .button{
     display: flex;
     justify-content: center;
@@ -376,6 +328,7 @@ table{
     opacity: 0.95;
     box-shadow: rgba(0, 0, 0, 1) 1px 1px 3px;
 }
+
 /* RESPONSIVE WEB */
 
 /* télephone */
