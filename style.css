@@ -235,13 +235,16 @@ body {
     background-color: #c2e7FF;
 }
 
+.onglets_content-form{
+    display: none;
+}
 
 
 /*  affiche le contact */
 .section-affiche {
     background-color: #ffffff;
      width: 70vw;
-     height: 47vw;
+     height: 52vw;
     border-radius: 3rem; 
     padding: 15px;
    
@@ -252,8 +255,9 @@ form {
 }
 
 
-.arrow-contact{
+.arrow-form{
     padding-left: 3rem;
+    padding-top: 1rem;
 }
 .text-onglets_content{
  margin: 1.5rem;
@@ -271,8 +275,8 @@ table{
     width: 100%;
 }
 .contact-profil{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -299,7 +303,7 @@ table{
 }
 /* affichage du formulaire */
 .affichage-formulaire{
-    padding: 2rem;
+    padding: 3rem;
 }
 .img-form{
     width: 12rem;
@@ -315,7 +319,7 @@ table{
     gap: 1rem;
 }
 
-.button{
+button{
     display: flex;
     justify-content: center;
     padding: 7px;
@@ -328,7 +332,54 @@ table{
     opacity: 0.95;
     box-shadow: rgba(0, 0, 0, 1) 1px 1px 3px;
 }
-
+#formulaire-contact{
+    margin-top: 3rem;
+}
+#firstname{
+    width: 25rem;
+    height: 2rem;
+    margin-bottom: 0.7rem;
+}
+#lastname{
+    width: 25rem;
+    height: 2rem;
+    margin-bottom: 0.7rem;
+}
+#company{
+    width: 25rem;
+    height: 2rem;
+    margin-bottom: 0.7rem;
+}
+#post{
+    width: 25rem;
+    height: 2rem;
+    margin-bottom: 0.7rem;
+}
+#email{
+    width: 25rem;
+    height: 2rem;
+    margin-bottom: 0.7rem; 
+}
+.ajout-contact{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 20rem;
+    height: 2rem;
+    padding:  0.5rem;
+    padding-left: 4rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    outline: none;
+    background-color: var(--blue-color);
+    color: var(--black-color);
+    gap: 1rem;
+}
+#phone{
+    width: 25rem;
+    height: 2rem;
+    margin-bottom: 1.5rem;  
+}
 /* RESPONSIVE WEB */
 
 /* télephone */
